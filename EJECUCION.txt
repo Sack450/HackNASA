@@ -1,0 +1,30 @@
+ejecucion del este "todo en terminal"
+Node.js (Versión LTS v20.x o superior)
+Incluye el gestor de paquetes npm.
+Verificación node -v y npm -v en la terminal.
+
+//Dependencias que podrian necesitar
+npm install react
+npm install react-dom
+npm install zustand
+npm install lucide-react
+npm install clsx
+npm install tailwind-merge
+
+//Dependencias para el desarrollo
+npm install -D vite
+npm install -D typescript
+npm install -D @vitejs/plugin-react
+npm install -D tailwindcss
+npm install -D @tailwindcss/vite
+npm install -D @types/react
+npm install -D @types/react-dom
+
+//Extensiones para VS o anti
+Tailwind CSS IntelliSense (bradlc.vscode-tailwindcss)
+ES7+ React/Redux/React-Native snippets (dsznajder.es7-react-js-snippets)
+
+//En la terminal ejecutar para visualizacion del proyecto
+npm install
+npm run dev
+Ingresar a la dirección local indicada por la terminal (por defecto http://localhost:5173).
