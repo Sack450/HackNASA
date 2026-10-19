@@ -9,6 +9,21 @@ export interface SatelliteComponent {
   specValue: string;
 }
 
+export type MaterialType = 'ALUMINUM_7075' | 'CARBON_COMPOSITE' | 'TITANIUM_G5';
+
+export interface MaterialSpec {
+  name: string;
+  massMultiplier: number;
+  costMultiplier: number;
+  thermalLimitMaxC: number;
+}
+
+export const MATERIALS_DATABASE: Record<MaterialType, MaterialSpec> = {
+  ALUMINUM_7075: { name: 'Aluminio 7075-T6', massMultiplier: 1.0, costMultiplier: 1.0, thermalLimitMaxC: 120 },
+  CARBON_COMPOSITE: { name: 'Composite Fibra de Carbono', massMultiplier: 0.55, costMultiplier: 2.8, thermalLimitMaxC: 180 },
+  TITANIUM_G5: { name: 'Titanio Grado 5', massMultiplier: 1.4, costMultiplier: 3.5, thermalLimitMaxC: 400 }
+};
+
 export const COMPONENTS_CATALOG: SatelliteComponent[] = [
   // CARGAS ÚTILES
   {
